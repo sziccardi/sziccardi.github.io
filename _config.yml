@@ -53,3 +53,17 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+navigation_header:
+- title: HOME
+  url: /
+- title: PROJECTS
+  url: /projoects/
+- title: CV
+  url: /cv/
+- title: CONTACT
+  url: /contact/
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  LinkedIn: https://www.linkedin.com/in/shelby-ziccardi/
+  GitHub: https://github.com/sziccardi
