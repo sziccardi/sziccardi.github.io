@@ -29,7 +29,7 @@ url: "https://sziccardi.github.io/" # the base hostname & protocol for your site
 github_username:  sziccardi
 
 # Build settings
-remote_theme: alembic-jekyll-theme
+theme: alembic-jekyll-theme
 plugins:
   - jekyll-feed
 
@@ -57,7 +57,7 @@ navigation_header:
 - title: HOME
   url: /
 - title: PROJECTS
-  url: /projoects/
+  url: /projects/
 - title: CV
   url: /cv/
 - title: CONTACT
