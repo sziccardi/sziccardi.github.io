@@ -4,15 +4,21 @@
     padding: 0;
     font-family: 'Product Sans', sans-serif;
 }
+
 #welcome{
+    /* background-image: url('img/bg_full.jpg'); */
     background-color: #ABB785;
-    padding-top: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 50px;
 }
 #welcome h1{
     color: #6C4F3D;
 }
 #welcome span{
-    color: #6F754F;
+    color: #150734;
 }
 #welcome h2{
     color: #fff;
@@ -56,7 +62,7 @@
 #contact{
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #150734;
+    background-color: #ABB785;
     text-align: center;
 }
 #contact h1{
@@ -66,6 +72,6 @@
     color: #fff;
 }
 #contact a{
-    color: #fff;
+    color: #150734;
     text-decoration: none;
 }
