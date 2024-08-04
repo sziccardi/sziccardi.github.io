@@ -37,6 +37,11 @@
 #welcome img{
     width: 100%;
 }
+#about h2{
+    color: #150734;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 #project{
     padding-top: 70px;
     padding-bottom: 70px;
