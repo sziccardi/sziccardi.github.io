@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZiccardi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><span><strong>Shelby Ziccardi</strong></span></h1>
+                    <h2>Doctoral Candidate</h2>
+                    <h4><em>University of Minnesota - Twin Cities</em></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <p class="indepth_h1">PROJECT: Projection Mapped Moss Map </p>
+            <p class="card-keywords">Keywords:  </p>
+            <img class="indepth-img" src="lines (2).jpg"/>
+            <br>
+            <p>
+                <b>Timeframe:</b>  June 2019 - January 2020 <br>
+                <b>Sponsoring Organization:</b> Google <br>
+                <b>Supervising Department/Laboratory/Course:</b> Downstream, LLC <br>
+            </p>
+
+            <p>    ​
+                <b>Languages:</b> C++ <br>
+                <b>Tools/Libraries:</b> Visual Studio, Cinder, OpenGL <br>
+            </p>
+            
+            <p class="indepth_h2">Description:</p>
+            <p>  
+                With my fantastic team at Downstream, we were able to build and install a lobby entry wall for the newly constructed 315 Hudson Google offices. This installation included 2 LED walls that flank projection on a physical map of Manhattan with preserved moss inlayed into the streets and waterways as well as an associated LED wall by the elevator banks that displays the same content. 
+            </p>
+            <p>
+                This native windows application was build in Downstream's custom framework, DS Cinder, which is extended from the open source framework Cinder. The app is display only, with no interactive inputs, but has 2 different instances running on 4 different windows computers. 3 machines are driving the main display of LED's and projection mapping with a single app instance with network synchronized display data and 1 machine is driving the other instance by the elevator bank. 
+            </p>
+            <p>
+                This app is designed with 7 different beautiful modes that can be scheduled and customized through web-based content management system. I personally spearheaded the development on 3 of the modes, in addition to the general structure and transitional pieces. I coordinated with both the design team, our own development team, and the clients from Google extensively throughout the process and was one of the developers who installed the apps successfully in Google's New York offices.
+            </p>
+            
+            <p class="indepth_h2">Modes:</p>
+            
+            <p>
+                These are still images of the modes I spearheaded the development on from inside the app as well as some video of the modes onsite at install. The images are a visualization of the 2 different LED screens (far left and far right) with an image of the wooden map with preserved moss in the middle. In reality, these 3 sections are driven by 3 different computers with the graphics synchronized over the network. You will often see a blank space under the central Google logo. This was an adjustment made after installation as the projector was distracting to the receptionists sitting at the tables in front of the wall.
+            </p>
+
+            <p><b>Waffles mode:</b></p>
+            <img class="indepth-img" src="img/projects/waffles (1).jpg" />
+            <div class="row">
+                <div class="column">
+                    <p>
+                        In this mode, squares appear in random positions with colors that sample from an uploaded video or image source. These squares begin small and transparent, and transition to a randomized larger size with full opacity. The effect is an ever-moving and evolving tapestry that is similar to stained glass. See a video of the mode playing onsite at installation on the right.
+                    </p>
+                </div>
+                <div class="column">
+                    <video width="320" height="240" controls>
+                        <source src="img/projects/VID_20200108_182305 (1).mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <p><b>Roots mode:</b></p>
+            <img class="indepth-img" src="img/projects/roots (1).jpg" />
+            <div class="row">
+                <div class="column">
+                    <p>
+                        In this mode, randomly generated roots grow and animate radially across the screen from the central Google 'o'. Additionally randomized colored flowers animate on and across the screen. The roots are fully randomized and computationally generated as well as the color and position of the flowers. I ran into a lot of issues with optimizing this mode to run at a full 60 fps with the algorithmic complexity and memory consumption but with various optimization techniques we were able to achieve around 40 fps consistently. You can see this mode playing onsite at install in the video to the right.
+                    </p>
+                </div>
+                <div class="column">
+                    <video width="320" height="240" controls>
+                        <source src="img/projects/roots_edited1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <p><b>Mondrian mode:</b></p>
+            <img class="indepth-img" src="img/projects/mondrian_edited.jpg" />
+            <div class="row">
+                <div class="column">
+                    <p>
+                        In this mode, I read in an SVG of polygons that match the city blocks in Manhattan and use those and some additional generated rectangles in a particle simulation that flows across the screen. The simulation begins with with the city blocks filling with color, then the additional blocks flow in from the left, picking up the city blocks into the flow as the pass. You can see a video of the mode being tested onsite on the right.
+                    </p>
+                </div>
+                <div class="column">
+                    <video width="320" height="240" controls>
+                        <source src="img/projects/mondrian_edited1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+
+            <p class="indepth_h2">Challenges faced:</p>
+            <p> 
+                <ul>
+                    <li>one.</li>
+                  </ul>
+            </p>
+            
+        </div>
+    </section>
+
+
+</body>
+</html>

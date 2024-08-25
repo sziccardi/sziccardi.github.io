@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZiccardi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><span><strong>Shelby Ziccardi</strong></span></h1>
+                    <h2>Doctoral Candidate</h2>
+                    <h4><em>University of Minnesota - Twin Cities</em></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <p class="indepth_h1">PROJECT: Halloween Ghost Cloth Simulation</p>
+            <p class="card-keywords">Keywords: cloth simulation, 3D graphics, C++, Visual Studio, OpenGL</p>
+            <img class="indepth-img" src="img/projects/ghost2.png"/>
+            <br>
+            <p>
+                <b>Timeframe:</b>   October 2020<br>
+                <b>Sponsoring Organization:</b>   University of Minnesota - Twin Cities<br>
+                <b>Supervising Department/Laboratory/Course:</b> CSCI 5611 - Animation and Planning in Games<br>
+                <b>Supervisor:</b> Stephen J. Guy<br>
+            </p>
+
+            <p>    ​
+                <b>Languages:</b> C++<br>
+                <b>Tools/Libraries:</b> Visual Studio, OpenGL, FreeGlut, SDL image, Photoshop<br>
+            </p>
+
+            <p>    
+                <b>References:</b><br>
+                <a href="https://learnopengl.com/Getting-started/Camera">learnopengl - Camera</a><br>
+                <a href="https://learnopengl.com/Getting-started/Textures">learnopengl - Textures</a><br>
+                <a href="https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/mesh.h">learnopengl - Mesh</a><br>
+                <a href="https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/shader.h">learnopengl - Shader</a><br>
+                <a href="https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/model.h">learnopengl - Model</a><br>
+                <a href="https://learnopengl.com/code_viewer_gh.php?code=src/3.model_loading/1.model_loading/model_loading.cpp">learnopengl - Model Loading</a><br>
+            </p>
+
+            <p>
+                <b>Link to codebase:</b> <a href="https://github.com/sziccardi/Cloth_Simulation">Click here</a>  
+            </p>
+            
+            <p class="indepth_h2">Description:</p>
+            <p>  
+                For a school project designed to explore cloth simulation, my project partner and I created a movable/interactive ghost with a spooky cloth cover. The simulation starts with an empty starry sky. Once played, a flat sheet falls down and you see it deform around an invisible sphere to create the shape of the ghost. The edges fall and and the cloth stretches and waves a bit. You can navigate around the ghost with the ASWD keys and spacebar to see the deformation from any side. With your mouse you can also pick up and drag the invisible sphere that defines the ghost's shape. When moved, the cloth moves and flutters along with it.
+            </p>
+            <p>
+                Our sheet, or cloth, is a textured polygon made from a grid of 60x50 particles connected by springs and governed by Hooke's Law. Each change in position is calculated through the use of 2nd order midpoint integration. Parameter tuning for this project was extensive and multiple adjustments were made to preserve numerical stability including higher order integrators, lower force constants, and smaller timesteps for integration. We also added a pretty high level of air resistance so the falling sheet has a floaty effect. While this makes it look less realistic as cloth, it makes it more realistic as a ghost.
+            </p>
+            
+            <p><b>Main Video:</b></p>
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=Z_2m5p8cHok">
+            </iframe>
+
+            <p><b>Example without drag coefficient:</b></p>
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=VfIJBLWUEh8&t=1s">
+            </iframe>
+
+            <p><b>Example in real-time instead of stylized:</b></p>
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=uUD69W-WOCk">
+            </iframe>
+
+            <p class="indepth_h2">Features:</p>
+            <p> 
+                Interaction of 2D cloth with a transparent solid sphere (Main video @ 0:04 - end)
+                Drag applied so to make the cloth spooky and floaty like a ghost (With drag: main video and real time video. Without drag: without drag video)
+                User controlled movement of ghost where mouse drags in plane parallel to camera position  (Main video @ 0:28 - 0:40)
+                User controlled 3D exploration where ASWD and spacebar to navigate (Main video @ 0:20 - 0:28)
+            </p>
+
+            <p class="indepth_h2">Challenges faced:</p>
+            <p> 
+                <ul>
+                    <li>Involves a lot of fine tuning parameters to ensure numerical stability of the cloth implementations.</li>
+                    <li>The 2D cloth simulation was hard to integrate particle bounces and obstacle interactions that felt natural.</li>
+                    <li>Adding other forces like drag and friction also proved a challenge! The cloth had a hard time staying on the ball, it would always slide off. To fix this we had to "pin" one vertex to the top of the ball in order to force the cloth to stay on the ball.</li>
+                    <li>Tried adding self-collisions with the ghost cloth, but turned out to be complicated and slow. </li>
+                  </ul>
+            </p>
+            
+        </div>
+    </section>
+
+
+</body>
+</html>

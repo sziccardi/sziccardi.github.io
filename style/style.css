@@ -14,18 +14,23 @@
     display: flex;
     padding-top: 50px;
 }
+
 #welcome h1{
     color: #6C4F3D;
 }
+
 #welcome span{
     color: #150734;
 }
+
 #welcome h2{
     color: #fff;
 }
+
 #welcome p{
     color: #fff;
 }
+
 #welcome button{
     padding: 15px;
     width: 150px;
@@ -34,36 +39,102 @@
     border: none;
     border-radius: 0px;
 }
+
 #welcome img{
     width: 100%;
 }
+
 #about h2{
     color: #150734;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+#about p{
+    color: #150734;
+    font-size: 24px;
+}
+
 #project{
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
 #project h2{
-    text-align: center;
     color: #150734;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
+
 #project .card{
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#project .card-title{
+    color: #150734;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#project .card-text{
+    color: #150734;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#project .card-keywords{
+    color: #150734;
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-style: italic;
+}
+
 #project .col-md-4{
     margin-bottom: 30px;
 }
+
 #project .card-img-top {
-    width: 100%;
+    width: 93%;
     height: 200px;
     object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+#project .img-caption {
+    color: #150734;
+    font-size: 12px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+#project .indepth_h1 {
+    color: #150734;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#project .indepth_h2 {
+    color: #150734;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#project .indepth-img {
+    width: 93%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
 #contact{
     padding-top: 70px;
     padding-bottom: 70px;

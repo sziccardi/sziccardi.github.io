@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZiccardi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><span><strong>Shelby Ziccardi</strong></span></h1>
+                    <h2>Doctoral Candidate</h2>
+                    <h4><em>University of Minnesota - Twin Cities</em></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <p class="indepth_h1">PROJECT: Machine Learning for Optimizing Sampling Based Path Planning </p>
+            <p class="indepth_h2"> </p>
+            <p class="card-keywords">Keywords: machine learning, neural networks, motion planning, sampling distribution, rapidly exploring random tree (RRT), Python, Google Colab, PyTorch </p>
+            
+            <br>
+            <p>
+                <b>Timeframe:</b> July 2020 - May 2021 <br>
+                <b>Sponsoring Organization:</b>  University of Minnesota - Twin Cities <br>
+                <b>Supervising Department/Laboratory/Course:</b> Applied Motion Lab <br>
+                <b>Supervisor:</b> Stephen J. Guy <br>
+            </p>
+
+            <p>    ​
+                <b>Languages:</b> Python, C++ <br>
+                <b>Tools/Libraries:</b> Google Colaboratory, PyTorch, PyPlot, Visual Studio, SDL <br>
+            </p>
+
+            <p>    
+                <b>References:</b><br>
+                
+            </p>
+
+            <p>
+                <b>Link to codebase:</b> Coming soon...  
+            </p>
+            
+            <p class="indepth_h2">Description:</p>
+            <p>  
+                As an exploration into sampling-based path planning algorithms as well as machine learning, I am working on this ongoing project to develop new ways of harnessing neural networks to increase sampling efficiency for sampling-based path planning methods. For this project, I implemented a Rapidly Exploring Random Tree (RRT) algorithm, as well as it's close optimal cousin RRT*, in a C++/Visual Studio environment in order to generate data for my neural network to learn on and evaluate with. I visualize the planning and environment using the SDL graphics library. The data I generate includes the positions and sizes of 4 randomly placed and sized circular obstacles, start position that is restricted to the left edge of the space, end position that is restricted to the right edge of the space, and the multi-variate distribution variables of the resultant solution path. You can see a sample scenario in Figure 1. I export this data 10,000 times in order to collect a sufficient dataset for training.
+            </p>
+            
+            <iframe width="420" height="315"
+                src="img/projects/rrtStar.png">
+            </iframe>
+            <p class="img-caption"><b>Figure 1:</b>  Sample scenario with RRT exploration</p>
+            <p>
+                My neural network, created in Google Colaboratory with PyTorch and Python, is currently a multi-linear-layer model with a Tanh activation function. Specifically, my network has 2 hidden layers, each with a Tanh activation function, and a linear output layer and utilizes a built-in Adam optimizer. My network takes in the start and end positions in the given scenario as well as the positions and radii of the 4 defined obstacles, and predicts the multi-variate distribution variables that define the distribution most likely to contain the solution. By sampling on this predicted distribution, instead of uniformly, I hope to see a reduction in number of samples required to find the optimal path. See illustrations of the predicted distributions in Figure 2.
+            </p>
+            
+            <iframe width="420" height="315"
+                src="img/projects/sample_Dist.png">
+            </iframe>
+            <p class="img-caption"><b>Figure 2:</b>  Sample scenario with predicted distribution</p>
+            <p>
+                I have run a few different versions that have mixed results. My current network has been trained on data from an RRT (not an RRT*) for 1000 epochs with a learning rate of 0.02. Using mean absolute error (MAE), we begin with a loss of about 0.67 and end with a loss of about 0.16. In using this network, we achieve a reduced number of samples in 55% of test scenarios but this did not correlate to a reduced length of the calculated path.  You can see some example sampling on the distributions below, Figures 3 - 5. 
+            </p>
+            <div class="row">
+                <div class="column">
+                  <img class="indepth-img" src="img/projects/123_dist.png" style="width:93%">
+                </div>
+                <div class="column">
+                  <img class="indepth-img" src="img/projects/80_dist.png" style="width:93%">
+                </div>
+                <div class="column">
+                  <img class="indepth-img" src="img/projects/162_dist.png" style="width:93%">
+                </div>
+              </div>
+            <p class="img-caption"> <b>Figure 3-5:</b>  Example outputs. In each, the red oval is the sampling distribution, the light blue tree is the RRT sampling tree with uniform sampling, the green path is the solution from the uniformly sampled tree, the purple tree is the RRT sampling tree with sampling on the distribution, and the pink path is the solution from the tree sampled on the distribution.</p>
+            
+            <p>
+                I have achieved more optimal results by upgrading my planner to an RRT* algorithm instead of an RRT however many extreme cases are failing to succeed. 
+            </p>
+            <p>
+                My next, and current, step is to adjust the structure of my network to train on generative data. In other words, designing a network that given previous steps, can generate the best next step. To accomplish this, I am implementing a conditional autoencoder structure and using samples from my RRT* solution paths in the same environments.
+            </p>
+            
+
+            <p class="indepth_h2">Features:</p>
+            <p> 
+                
+            </p>
+
+            <p class="indepth_h2">Challenges faced:</p>
+            <p> 
+                <ul>
+                    <li>one.</li>
+                  </ul>
+            </p>
+            
+        </div>
+    </section>
+
+
+</body>
+</html>
