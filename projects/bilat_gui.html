@@ -32,21 +32,23 @@
 
     <section id="project">
         <div class="container">
-            <p class="indepth_h1">PROJECT:  </p>
+            <button class="btn btn-warning" onclick="javascript:window.history.back();"  style="margin-bottom:30px">Back</button>
+            <p class="indepth_h1">PROJECT: Bilateral Movement Assessment Toolkit (BMAT) </p>
             <p class="indepth_h2"> </p>
-            <p class="card-keywords">Keywords:  </p>
+            <p class="card-keywords">Keywords: Python, motion capture, OpenPose, MediaPipe, user interface, PyShiny, clinical movement analysis, Cerebral Palsy </p>
             <img class="indepth-img" src=" "/>
             <br>
             <p>
-                <b>Timeframe:</b>  <br>
-                <b>Sponsoring Organization:</b>  <br>
-                <b>Supervising Department/Laboratory/Course:</b>  <br>
-                <b>Supervisor:</b>  <br>
+                <b>Timeframe:</b> September 2021 - present<br>
+                <b>Sponsoring Organization:</b> Stanford's Restore Center Pilot Grant <br>
+                <b>Supervising Department/Laboratory/Course:</b> Applied Motion Lab, NeuroRehabilitation Across the Lifespan Lab<br>
+                <b>Supervisor:</b> Stephen J. Guy, Rachel Hawe<br>
+                <b>Funding Source(s):</b> National Science Foundation Graduate Training Program in Translational Sensory Science, Restore Center
             </p>
 
             <p>    ​
-                <b>Languages:</b> <br>
-                <b>Tools/Libraries:</b> <br>
+                <b>Languages:</b> Python <br>
+                <b>Tools/Libraries:</b> OpenPose, MatPlotLib, PyShiny, Streamlit, PyTorch, Numpy, Google Colaboratory, VS Code <br>
             </p>
 
             <p>    
@@ -55,30 +57,49 @@
             </p>
 
             <p>
-                <b>Link to codebase:</b> <a href=" ">Click here</a>  
+                <b>Link to codebase:</b> <a href="https://github.com/sziccardi/MovementMetrics">Click here</a>  
             </p>
             
             <p class="indepth_h2">Description:</p>
             <p>  
-                ...
+                For many people who have experienced a stroke, including children with hemiparetic cerebral palsy (HCP), can have impaired bilateral coordination. Traditional methods of evaluating this type of coordination often focus on actual ability vs. functional ability, particularly with children. While a child may be able to perform tasks with both of their hands, they may only use one side of their body during everyday activities. The Assisting Hand Assessment (AHA) was developed in hopes of closing that gap. The AHA is a test of hand function in children with difficulties using one of their hands, including children with HCP, where a child participates in an unrestricted play session for 20 min with a set of carefully selected toys all designed to be used with both hands. The play session is then videotaped and a trained clinician scores the child's spontaneous bimanual actions. While the play session is only 20 min, the scoring after the fact can take much longer and despite the extensive training necessary to perform the analysis, the scoring is still a somewhat subjective measure by the clinician. 
+
+                In hopes of building a tool that not only increases the efficiency of clinicians but also increases the objectivity of the assessment, I have partnered with the NeuroRehabilitation Across the Lifespan Laboratory (NeuRAL) and Dr. Rachel Hawe in the University of Minnesota's department of Kinesiology.
+
+                With this overarching motivation, our big picture goal is to develop a pipeline that can take in a video of an AHA session, compute the pose estimation information of the participant, segment the video into individual gestures, and classify those gestures into categories defined by the AHA scoring guide. These segments and classifications , we hope will be useful to the scoring clinician by letting the scoring be more objective and consistent between clinicians as well as reduce the scoring time per session by giving the clinicians more data.
+
+                As this pipeline is extremely complex with a huge number of unknowns, we have broken the project down into multiple sub-goals with distinct end states that let us continuously evaluate feasibility.
             </p>
             
             
-            <p><b>Example:</b></p>
+            <p><b>Sub-goal #1:</b> 
+                We have begun this process by developing 10+ individual metrics for evaluating pose estimation information from videos of bilateral movements. We use OpenPose including default skeleton and finger tracking to extract pose information per frame then plot the custom metric values in a user interface to be used by clinicians. We have explored and evaluated a number of different GUI Python libraries including PySimpleGUI, PyShiny, and Streamlit. 
+
+                You can see example videos taken by an undergraduate collaborator and some associated plots of the left and right wrists to the right and below.
+                
+                Next steps shall include running videos of AHA sessions performed by children with HCP, evaluating the success of OpenPose pose estimation on individuals who move atypically, and evaluating the success of our metrics in assisting clinicians with their evaluations.</p>
             <iframe width="420" height="315"
                 src="">
             </iframe>
 
-            <p class="indepth_h2">Features:</p>
+            <p><b>Sub-goal #2:</b> 
+                Our next step is to develop a machine learning network structure that can annotate key moments in in a series of pose estimation data. The main challenge we face in this process is difficulty in collecting a large enough dataset of the target atypical movement patterns for thorough training. To overcome this obstacle, we propose a generative pretrained transformer which would supplement a full end-to-end trained network designed to annotate pose estimation data with only a few examples. The pretraining could be conducted on typically moving people doesn't have to be annotated. This method is inspired by recent successful methods in natural language processing and we predict it can be successful in the field of motion analysis and trajectory prediction. 
+
+                Current work has evaluated an autoencoder structure with limited successes. Further work plans to implement a transformer structure, similar to Radford et. al. in [1]
+
+                [1] Radford, A., Narasimhan, K., Salimans, T., & Sutskever, I. (2018). Improving language understanding by generative pre-training.</p>
+            <iframe width="420" height="315"
+                src="">
+            </iframe>
+
+            <p class="indepth_h2">Conclusion:</p>
             <p> 
-                
+                Only once each piece has been successful can we pull the pipeline together and evaluate the overall success. We must confirm that using our pipeline reduces the average time clinicians need to score AHA assessments, reduces the variety in scores between clinicians for the same assessment sessions, and perhaps even increase the access for clinicians to the AHA.
             </p>
 
-            <p class="indepth_h2">Challenges faced:</p>
+            <p class="indepth_h2">Possible auxiliary results:</p>
             <p> 
-                <ul>
-                    <li>one.</li>
-                  </ul>
+                Other possible information that could result from this project includes identifying weaknesses in current pose estimation methods on people who who move atypically, the overall success of generative pretrained transformers outside of natural language processing, automatic annotation tools for video processing, and more.
             </p>
             
         </div>
