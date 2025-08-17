@@ -28,7 +28,7 @@ disqus_shortname: myshortname
 color:
   primary: 86A397 #18bc9c #80B3FF
   primary-rgb: "134,163,151" #"24,288,156" #"128,179,255"
-  secondary: d9cdbf #C77E68 #2c3e50 #FD6E8A
+  secondary: 1E3F30 #C77E68 #2c3e50 #FD6E8A
   secondary-dark: 3D3A3B #233140 #A2122F
 
 # Footer settings
@@ -42,6 +42,12 @@ footer:
 social:
   - title: github
     url: http://github.com/sziccardi
+  - title: linkedin
+    url: https://www.linkedin.com/in/shelby-ziccardi/
+  - title: Applied Motion Lab
+    url: https://motion.cs.umn.edu/
+  - title: Neural Rehabilitation Lab
+    url: https://neural.umn.edu/
 
 # Postal address (add as many lines as necessary)
 # address:
