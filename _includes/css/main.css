@@ -183,16 +183,10 @@ section h2 {
 }
 
 section.cv {
-    color: #fff;
+    color: #{{ site.color.secondary-dark }};
     background: #{{ site.color.primary }};
 }
 
-section .cv .title {
-    display: block;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 700;
-}
 
 @media(max-width:767px) {
     section {
