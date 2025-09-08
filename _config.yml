@@ -31,12 +31,6 @@ color:
   secondary: 283d3b
   secondary-dark: b85042 
 
-  # color:
-  # primary: A1BAA4
-  # primary-rgb: "161,186,164"
-  # secondary: 472D30
-  # secondary-dark: 01161E 
-
 # Footer settings
 footer:
   copyright: Shelby Ziccardi

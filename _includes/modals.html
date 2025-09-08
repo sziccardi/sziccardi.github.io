@@ -16,13 +16,15 @@
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
-            {% endif %}
             <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
+              {% if post.organization %}
+              <li>Sponsoring Organization:
+                <strong>{{ post.organization }}</strong>
+              </li>
+              {% endif %}
+              {% if post.supervisor %}
+              <li>Supervising group:
+                <strong>{{ post.supervisor }}</strong>
               </li>
               {% endif %}
               {% if post.project-date %}
@@ -30,12 +32,15 @@
                 <strong>{{ post.project-date }}</strong>
               </li>
               {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
+              {% if post.keywords %}
+              <li>Keywords:
+                <strong>{{ post.keywords }}</strong>
               </li>
               {% endif %}
             </ul>
+            {% if post.description %}
+            <p>{{ post.description }}</p>
+            {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>

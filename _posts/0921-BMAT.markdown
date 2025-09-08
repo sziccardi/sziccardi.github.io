@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 4
+date: 2021-09-01
+img: cabin.png
+alt: image-alt
+title: Bilateral Motion Analysis Toolkit (BMAT)
+project-date: Sept 2021 - Present
+organization: University of Minnesota
+supervisor: Applied Motion Lab, Neuro Rehabilition Across the Lifespan Lab
+keywords: Motion analysis, movement rehabilitation and assessment
+description: TBD
+---
