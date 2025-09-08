@@ -183,7 +183,7 @@ section h2 {
 }
 
 section.cv {
-    color: #{{ site.color.secondary-dark }};
+    color: #fff;
     background: #{{ site.color.primary }};
 }
 
