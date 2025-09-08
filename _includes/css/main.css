@@ -109,6 +109,8 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -180,9 +182,16 @@ section h2 {
     font-size: 3em;
 }
 
-section.success {
+section.cv {
     color: #fff;
     background: #{{ site.color.primary }};
+}
+
+section .cv .title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 700;
 }
 
 @media(max-width:767px) {
