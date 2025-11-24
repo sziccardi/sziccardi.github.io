@@ -1,10 +1,11 @@
 # Site settings
 title: SZiccardi
+name: Shelby Ziccardi
 email: shelbyziccardi@gmail.com
 url: https://github.com/sziccardi
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "research, computer science, phd, human motion analysis, motion capture"
-skills: "Research, Computer Vision, Graphics, Motion Capture, Human Movement Analysis"
+skills: "Research, Human Movement Analysis, Simulation"
 meta_author: Ziccardi Shelby
 
 # Google webmaster tools
@@ -25,10 +26,10 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 7ca982
+  primary-rgb: "124,169,130"
+  secondary: 283d3b
+  secondary-dark: b85042 
 
 # Footer settings
 footer:
@@ -41,6 +42,12 @@ footer:
 social:
   - title: github
     url: http://github.com/sziccardi
+  - title: linkedin
+    url: https://www.linkedin.com/in/shelby-ziccardi/
+  - title: Applied Motion Lab
+    url: https://motion.cs.umn.edu/
+  - title: Neural Rehabilitation Lab
+    url: https://neural.umn.edu/
 
 # Postal address (add as many lines as necessary)
 # address:
