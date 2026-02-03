@@ -2,6 +2,7 @@
 layout: default
 modal-id: 5
 date: 2021-09-01
+title: Bilateral Motion Analysis Toolkit
 img: project-5-header.png
 alt: image-alt
 project-date: Sept 2021 - Present

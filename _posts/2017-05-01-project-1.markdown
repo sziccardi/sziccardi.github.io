@@ -1,6 +1,7 @@
 ---
 layout: default
 modal-id: 1
+title: Individual Calibration of Redirected Walking Thresholds
 date: 2017-08-01
 img: project-2-header.png
 alt: image-alt

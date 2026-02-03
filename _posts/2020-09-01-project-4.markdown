@@ -2,6 +2,7 @@
 layout: default
 modal-id: 4
 date: 2021-05-01
+title: Halloween Ghost Cloth Simulation
 img: project-4-header.png
 alt: image-alt
 project-date: Sept 2020 - May 2021

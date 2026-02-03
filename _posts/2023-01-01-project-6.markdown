@@ -2,6 +2,7 @@
 layout: default
 modal-id: 6
 date: 2023-01-01
+title: Within Arm's Reach Mocap Game
 img: project-6-header.png
 alt: image-alt
 project-date: Jan 2023 - present

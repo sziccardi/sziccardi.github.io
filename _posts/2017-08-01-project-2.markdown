@@ -2,6 +2,7 @@
 layout: default
 modal-id: 2
 date: 2018-05-01
+title: Low-Cost Optical Motion Capture System
 img: project-1-header.png
 alt: image-alt
 project-date: Aug 2017 - May 2018
