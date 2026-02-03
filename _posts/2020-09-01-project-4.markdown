@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 4
+date: 2021-05-01
+img: project-4-header.png
+alt: image-alt
+project-date: Sept 2020 - May 2021
+client: University of Minnesota - Computer Science & Engineering
+category: Simulation
+description: Developed physics-based cloth and 3D elastic solid simulations from scratch in C++ using OpenGL. Implemented RRT* anticipatory path planning algorithm with online collision avoidance for procedural crowd simulation in C++. Built 3D ray tracer from base principles using projective geometric algebra in C++ with custom libraries.
+---

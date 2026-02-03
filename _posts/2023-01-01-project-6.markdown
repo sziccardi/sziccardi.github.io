@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 6
+date: 2023-01-01
+img: project-6-header.png
+alt: image-alt
+project-date: Jan 2023 - present
+client: University of Minnesota, Applied Motion Lab and NeuroRehabilitation Across the Lifespan Lab
+category: Game development, movement analysis
+description: Video-based reaching game designed to induce unilateral and bilateral reaching in children without restriction built in Unity with pose extracted by MediaPipe. Motion capture data and game performance metrics collected from 151 typically developing children at the 2023 MN State Fair and from 400 people at the 2024 MN State Fair. Typical development performance markers and unique movement patterns identified across ages and genders with statistical significance. Associated paper published in Human Movement Science (Aug 2024). Clinical version developed and deployed at Gillette Children's hospital in Saint Paul, MN. Data collection ongoing in chidren with Cerebral Palsy.
+---

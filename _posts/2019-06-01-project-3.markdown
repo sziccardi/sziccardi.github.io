@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 3
+date: 2020-01-01
+img: project-3-header.png
+alt: image-alt
+project-date: Jun 2019 - Jan 2020
+client: Downstream for Google
+category: Interactive media, simulation
+description: Native windows application that displays and synchronizes artistic content across 2 LED walls that flank projection on a physical map. Personally developed framework, transitional pieces, as well as 3 of the 7 simulation based content modes which included randomly generated roots that grew naturally across the screen and a stream of moving particles shaped like the city blocks. Application successfully installed in Google's new 315 Hudson office lobby in New York.
+---

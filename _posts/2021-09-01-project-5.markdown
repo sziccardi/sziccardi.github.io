@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 5
+date: 2021-09-01
+img: project-5-header.png
+alt: image-alt
+project-date: Sept 2021 - Present
+client: University of Minnesota, Applied Motion Lab and NeuroRehabilitation Across the Lifespan Lab
+category: Computer vision, movement analysis
+description: Data processing and visualization toolkit to support clinicians in evaluating natural bilateral arm use. Analysis and associated GUI built in Python to handle pose estimations of the upper body from MediaPipe, ViTPose, or PoseFormer. Clinically relevant movement metrics automatically computed, including object detection and segmentation. Associated poster published at AACPDM 2023 Annual Meeting. Supported by Stanford University's Restore Center pilot funding.
+---

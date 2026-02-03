@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 2
+date: 2018-05-01
+img: project-1-header.png
+alt: image-alt
+project-date: Aug 2017 - May 2018
+client: Lewis & Clark College
+category: Computer Vision
+description: Computer vision pipeline that takes in video footage of markers moving in space and computes the 3D location of the markers to output. Developed image processing and linear algebra tools and framework written in C++. Included hour long technical talk and publication in the library of theses by Lewis & Clark College.
+---

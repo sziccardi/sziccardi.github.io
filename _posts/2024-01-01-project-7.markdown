@@ -1,0 +1,11 @@
+---
+layout: default
+modal-id: 7
+date: 2024-01-01
+img: project-7-header.png
+alt: image-alt
+project-date: Jan 2024 - present
+client: University of Minnesota, Applied Motion Lab, Department of Pediatrics, M Health Fairview NICU
+category: Clinical movement analysis
+description: Unsupervised multidimensional clustering of raw and reduced motion data to identify key movement strategies with convolutional graph neural networks and contrastive learning for dimensionality reduction in PyTorch. Exploratory analysis to associate clusters with demographics and conditions for the identification of previously unknown subgroups. Methods validated on arm movement of typically developing people and full-body movement of at-risk infants in the NICU..
+---
